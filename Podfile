@@ -9,4 +9,6 @@ target 'tgpedia' do
   pod 'AWSMobileClient'
   pod 'AWSAuthUI'
   pod 'AWSUserPoolsSignIn'
+  pod 'SwiftyJSON'
+  pod 'Alamofire'
 end

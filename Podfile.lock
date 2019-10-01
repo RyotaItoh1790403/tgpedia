@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.9.0)
   - AWSAuthCore (2.11.1):
     - AWSCore (= 2.11.1)
   - AWSAuthUI (2.11.1):
@@ -15,14 +16,18 @@ PODS:
   - AWSUserPoolsSignIn (2.11.1):
     - AWSAuthCore (= 2.11.1)
     - AWSCognitoIdentityProvider (= 2.11.1)
+  - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
+  - Alamofire
   - AWSAuthUI
   - AWSMobileClient
   - AWSUserPoolsSignIn
+  - SwiftyJSON
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - AWSAuthCore
     - AWSAuthUI
     - AWSCognitoIdentityProvider
@@ -30,8 +35,10 @@ SPEC REPOS:
     - AWSCore
     - AWSMobileClient
     - AWSUserPoolsSignIn
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
   AWSAuthCore: 23545c33485f2e92acde3e7458e6ee07410e7f28
   AWSAuthUI: 761f70d828a7c7ea7aa118ae237c0743e13b40fb
   AWSCognitoIdentityProvider: 81fe83bd5b05151250346eedbabdb055b509d439
@@ -39,7 +46,8 @@ SPEC CHECKSUMS:
   AWSCore: 00093a1ff49b5d6ce5f1e4d83fe301486fc5034d
   AWSMobileClient: 1acbe6ae32ebe5899425ac33d89491e4608da393
   AWSUserPoolsSignIn: b6e339b139fdd310c50de2ca6b4e1a896e7be983
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 1f4c82e469c67687c28ffb664843691a338fe911
+PODFILE CHECKSUM: ac8d4dbfc99bd3d677fdf024ff84a9512f41baae
 
 COCOAPODS: 1.8.0

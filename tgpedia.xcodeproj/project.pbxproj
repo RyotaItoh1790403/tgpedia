@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,10 @@
 		0019FFA72343C0DE00C80499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0019FFA62343C0DE00C80499 /* Assets.xcassets */; };
 		0019FFAA2343C0DE00C80499 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0019FFA92343C0DE00C80499 /* Preview Assets.xcassets */; };
 		0019FFAD2343C0DE00C80499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0019FFAB2343C0DE00C80499 /* LaunchScreen.storyboard */; };
+		0019FFB72343CB8E00C80499 /* PhotoCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0019FFB62343CB8E00C80499 /* PhotoCaptureView.swift */; };
+		0019FFB92343CD4200C80499 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0019FFB82343CD4200C80499 /* ImagePicker.swift */; };
+		0019FFBC2343EC7E00C80499 /* DetectedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0019FFBB2343EC7E00C80499 /* DetectedLabel.swift */; };
+		0019FFBF2343ED3F00C80499 /* DetectLabelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0019FFBE2343ED3F00C80499 /* DetectLabelService.swift */; };
 		51724F7C783461CEF2DB6105 /* Pods_tgpedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E93D77E8D2DC24F8241D1A /* Pods_tgpedia.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +31,10 @@
 		0019FFA92343C0DE00C80499 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0019FFAC2343C0DE00C80499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0019FFAE2343C0DE00C80499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0019FFB62343CB8E00C80499 /* PhotoCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureView.swift; sourceTree = "<group>"; };
+		0019FFB82343CD4200C80499 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImagePicker.swift; path = ../../TGpediaTabBased/TGpediaTabBased/TGpediaTabBased/ImagePicker.swift; sourceTree = "<group>"; };
+		0019FFBB2343EC7E00C80499 /* DetectedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectedLabel.swift; sourceTree = "<group>"; };
+		0019FFBE2343ED3F00C80499 /* DetectLabelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectLabelService.swift; sourceTree = "<group>"; };
 		16E6A87D70A18EE25017EFBD /* Pods-tgpedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tgpedia.release.xcconfig"; path = "Target Support Files/Pods-tgpedia/Pods-tgpedia.release.xcconfig"; sourceTree = "<group>"; };
 		19E93D77E8D2DC24F8241D1A /* Pods_tgpedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tgpedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80E66BC9BD3849057820F186 /* Pods-tgpedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tgpedia.debug.xcconfig"; path = "Target Support Files/Pods-tgpedia/Pods-tgpedia.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,14 +73,18 @@
 		0019FF9C2343C0DD00C80499 /* tgpedia */ = {
 			isa = PBXGroup;
 			children = (
+				0019FFBD2343ED0500C80499 /* Services */,
+				0019FFBA2343EC5100C80499 /* Models */,
 				0019FF9D2343C0DD00C80499 /* AppDelegate.swift */,
 				0019FF9F2343C0DD00C80499 /* SceneDelegate.swift */,
+				0019FFB82343CD4200C80499 /* ImagePicker.swift */,
 				0019FFA42343C0DD00C80499 /* ContentView.swift */,
 				0019FFA62343C0DE00C80499 /* Assets.xcassets */,
 				0019FFAB2343C0DE00C80499 /* LaunchScreen.storyboard */,
 				0019FFAE2343C0DE00C80499 /* Info.plist */,
 				0019FFA12343C0DD00C80499 /* tgpedia.xcdatamodeld */,
 				0019FFA82343C0DE00C80499 /* Preview Content */,
+				0019FFB62343CB8E00C80499 /* PhotoCaptureView.swift */,
 			);
 			path = tgpedia;
 			sourceTree = "<group>";
@@ -83,6 +95,22 @@
 				0019FFA92343C0DE00C80499 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0019FFBA2343EC5100C80499 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0019FFBB2343EC7E00C80499 /* DetectedLabel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0019FFBD2343ED0500C80499 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0019FFBE2343ED3F00C80499 /* DetectLabelService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		280E2358F2A043BB405166E4 /* Frameworks */ = {
@@ -99,7 +127,6 @@
 				80E66BC9BD3849057820F186 /* Pods-tgpedia.debug.xcconfig */,
 				16E6A87D70A18EE25017EFBD /* Pods-tgpedia.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -221,6 +248,10 @@
 				0019FF9E2343C0DD00C80499 /* AppDelegate.swift in Sources */,
 				0019FFA02343C0DD00C80499 /* SceneDelegate.swift in Sources */,
 				0019FFA52343C0DD00C80499 /* ContentView.swift in Sources */,
+				0019FFB92343CD4200C80499 /* ImagePicker.swift in Sources */,
+				0019FFBC2343EC7E00C80499 /* DetectedLabel.swift in Sources */,
+				0019FFBF2343ED3F00C80499 /* DetectLabelService.swift in Sources */,
+				0019FFB72343CB8E00C80499 /* PhotoCaptureView.swift in Sources */,
 				0019FFA32343C0DD00C80499 /* tgpedia.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
