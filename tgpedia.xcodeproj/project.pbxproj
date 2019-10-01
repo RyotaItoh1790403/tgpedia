@@ -14,6 +14,7 @@
 		0019FFA72343C0DE00C80499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0019FFA62343C0DE00C80499 /* Assets.xcassets */; };
 		0019FFAA2343C0DE00C80499 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0019FFA92343C0DE00C80499 /* Preview Assets.xcassets */; };
 		0019FFAD2343C0DE00C80499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0019FFAB2343C0DE00C80499 /* LaunchScreen.storyboard */; };
+		51724F7C783461CEF2DB6105 /* Pods_tgpedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E93D77E8D2DC24F8241D1A /* Pods_tgpedia.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		0019FFA92343C0DE00C80499 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0019FFAC2343C0DE00C80499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0019FFAE2343C0DE00C80499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16E6A87D70A18EE25017EFBD /* Pods-tgpedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tgpedia.release.xcconfig"; path = "Target Support Files/Pods-tgpedia/Pods-tgpedia.release.xcconfig"; sourceTree = "<group>"; };
+		19E93D77E8D2DC24F8241D1A /* Pods_tgpedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tgpedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80E66BC9BD3849057820F186 /* Pods-tgpedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tgpedia.debug.xcconfig"; path = "Target Support Files/Pods-tgpedia/Pods-tgpedia.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51724F7C783461CEF2DB6105 /* Pods_tgpedia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				0019FF9C2343C0DD00C80499 /* tgpedia */,
 				0019FF9B2343C0DD00C80499 /* Products */,
+				F2199DE68A692B1E4799B13A /* Pods */,
+				280E2358F2A043BB405166E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +85,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		280E2358F2A043BB405166E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19E93D77E8D2DC24F8241D1A /* Pods_tgpedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2199DE68A692B1E4799B13A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80E66BC9BD3849057820F186 /* Pods-tgpedia.debug.xcconfig */,
+				16E6A87D70A18EE25017EFBD /* Pods-tgpedia.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0019FFB12343C0DE00C80499 /* Build configuration list for PBXNativeTarget "tgpedia" */;
 			buildPhases = (
+				C7DA2B786B4621058BCDF70E /* [CP] Check Pods Manifest.lock */,
 				0019FF962343C0DD00C80499 /* Sources */,
 				0019FF972343C0DD00C80499 /* Frameworks */,
 				0019FF982343C0DD00C80499 /* Resources */,
+				4CC92310FD86AA6245022154 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -143,6 +170,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CC92310FD86AA6245022154 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tgpedia/Pods-tgpedia-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tgpedia/Pods-tgpedia-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tgpedia/Pods-tgpedia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7DA2B786B4621058BCDF70E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tgpedia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0019FF962343C0DD00C80499 /* Sources */ = {
@@ -286,6 +355,7 @@
 		};
 		0019FFB22343C0DE00C80499 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80E66BC9BD3849057820F186 /* Pods-tgpedia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -306,6 +376,7 @@
 		};
 		0019FFB32343C0DE00C80499 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16E6A87D70A18EE25017EFBD /* Pods-tgpedia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

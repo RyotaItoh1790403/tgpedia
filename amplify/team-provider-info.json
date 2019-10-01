@@ -1,0 +1,14 @@
+{
+    "develop": {
+        "awscloudformation": {
+            "AuthRoleName": "tgpedia-develop-20191002021951-authRole",
+            "UnauthRoleArn": "arn:aws:iam::356571000075:role/tgpedia-develop-20191002021951-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::356571000075:role/tgpedia-develop-20191002021951-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "tgpedia-develop-20191002021951-deployment",
+            "UnauthRoleName": "tgpedia-develop-20191002021951-unauthRole",
+            "StackName": "tgpedia-develop-20191002021951",
+            "StackId": "arn:aws:cloudformation:us-east-2:356571000075:stack/tgpedia-develop-20191002021951/adf1ab70-e46f-11e9-83dc-0a7adbd72fc8"
+        }
+    }
+}
