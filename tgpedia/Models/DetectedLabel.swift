@@ -10,7 +10,11 @@ import Foundation
 
 struct DetectedLabel : Decodable{
     
-    var name: String?
+    var name: String
 //    var confidence: Double?
+    
+    init?() {
+        return nil
+    }
     
 }

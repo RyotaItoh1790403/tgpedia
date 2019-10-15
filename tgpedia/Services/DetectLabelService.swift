@@ -8,15 +8,17 @@
 
 import Foundation
 import UIKit
-import SwiftyJSON
+//import SwiftyJSON
 
 class DetectLabelService {
     
-    func getDetectedLabel(image: UIImage, completion: DetectedLabel) -> (){
+    func getDetectedLabel(image: UIImage) -> DetectedLabel {
         
         guard let url = URL(string: "https://sqsa6asw0c.execute-api.us-east-2.amazonaws.com/dev") else {
             fatalError("invalid url")
         }
+        
+        var detectedLabel = DetectedLabel()
         
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
@@ -32,13 +34,14 @@ class DetectLabelService {
                 return
             }
             print(data)
-            let detectedLabel = try? JSONDecoder().decode(DetectedLabel.self, from: data)
-            print(detectedLabel)
+            detectedLabel = try? JSONDecoder().decode(DetectedLabel.self, from: data)
+            print(detectedLabel!.name)
             DispatchQueue.main.async{
 //                completion(detectedLabel?)
             }
-            
         }.resume()
+        
+        return detectedLabel!
         
     }
 }
